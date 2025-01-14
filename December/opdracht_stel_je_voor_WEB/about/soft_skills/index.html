@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../common/style.css">
+    <title>J.J. - Andere Droom</title>
+</head>
+<body>
+    <header>
+        <p id="version">Version 1.2</p>
+        <img 
+        src="../../common/images/madeby2.png"
+        alt=""
+        id="headerimg">
+    </header>
+    <nav>
+        <a href="/../../">Home</a>
+        <a href="../">About Me</a>
+        <a href="/../../">Contact</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" 
+        class="closebtn" onclick="closeNav()">&times;
+        </a>
+        <a href="../">About Me</a>
+        <a href="../andere_droom/">Andere Droom</a>
+        <a href="../mijn_droombaan/">Mijn Droombaan</a>
+        <a href="../na_het_ma/">Na het MA</a>
+        <a href="../tech_skills/">Tech Skills</a>
+        <a href="../soft_skills/">Soft Skills</a>
+        <a href="../wat_wil_ik/">Goals</a>
+      </div>
+
+      <button id="sidenavbutton"><span onclick="openNav()">Open Sidenav</span></button>
+
+        <main id="aboutme_article">
+        <h1>Soft Skills</h1>
+        <br>
+        <h2>Mijn Soft skills</h2>
+        <br>
+        <ul style="list-style-type:circle">
+        <li>Geduld</li>
+        <br>
+        <li>Creativiteit</li>
+        <br>
+        <li>Sociaal</li>
+        <br>
+        <li>Behulpzaamheid</li>
+        <br>
+        <li>Postiviteit</li>
+        <br>
+        <li>Initiatief</li>
+        <br>
+        <li>Actief Luisteren</li>
+        <br>
+        <li id="andmore">En nog veel meer...</li>
+        </ul>
+    </main>
+    <footer>
+        Made by J.J. Romeira De Bastos
+    </footer>
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+    
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+/*the following few font faces are the fonts for this website! :D */
+
+@font-face{
+    font-family:segmentedfont;
+    src: url("./fonts/segemented.ttf");
+}
+
+@font-face{
+    font-family:DSFONT;
+    src: url("./fonts/Nintendo-DS-BIOS.ttf");
+}
+
+@font-face{
+    font-family:LedDOT;
+    src: url("./fonts/leddot.ttf");
+}
+
+@font-face{
+    font-family:NDS;
+    src: url("./fonts/NDS-System.ttf");
+}
+
+@font-face{
+    font-family:awesomeFont;
+    src: url("./fonts/HelveticaNeue-Bold.otf");
+}
+@font-face{
+    font-family:awesomeFont2;
+    src: url("./fonts/HelveticaNeue-Light.otf");
+}
+@font-face{
+    font-family:visitorFONT;
+    src: url("./fonts/visitor1.ttf");
+}
+@font-face{
+    font-family:visitorFONT2;
+    src: url("./fonts/visitor2.ttf");
+}
+
+@font-face{
+    font-family:eurostile;
+    src: url("./fonts/eurostile.TTF");
+}
+/*End of fonts*/
+
+#headerimg{
+    padding:5px;
+}
+#version{
+    font-family:eurostile;
+    float: right;
+    padding: 10px;
+}
+nav{
+    background-color: #5FACBC;
+    padding: 0.5vw;
+    font-family:visitorFONT;
+    color: #f2f2f2;
+    text-decoration: none;
+    overflow: hidden;
+}
+nav a{
+    color: #f2f2f2;
+    text-decoration: none;
+    overflow: hidden;
+    display:inline-block;
+    padding: 8px 16px;
+}
+nav a:hover{
+    background:#81bdc9;
+}
+.sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    font-family:eurostile;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background: #5FACBC;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 2);
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+  }
+main{ 
+    width: 75vw;
+    font-family:awesomeFont2;
+    padding: 20px;
+    width: 75vw;
+}
+main h1{
+    font-family: awesomeFont;
+}
+img{
+    vertical-align: middle;
+    max-width: 50vw;
+    max-height: 50vw;
+}
+#welcomeA{
+    font-family:awesomeFont2;
+    padding: 2vw;
+}
+#welkomimage, #me{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 2);
+}
+footer{
+    background-color: #5FACBC;
+    padding:20px;
+    color: #f1f1f1;
+    font-family:awesomeFont2;
+}
+button{
+    font-family:visitorFONT2;
+    margin-left:10px;
+    margin-top:10px;
+}
+#andmore{
+    color: #dddddd;
+}
+
+/* SLIDESHOW STUFF */
+
+.slideshow-container {
+    max-width: 50vw;
+    max-height: 50vw;
+    position: relative;
+    margin: auto;
+  }
+  
+.mySlides {
+    display: none;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    font-family: visitorfont2;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+.numbertext {
+    color: #c08310;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #386285;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+  .active, .dot:hover {
+    background-color: #717171;
+}
+  
+.fade {
+    animation-name: fading;
+    animation-duration: 2s;
+}
+  
+@keyframes fading{
+    from {opacity: .4}
+    to {opacity: 1}
+}

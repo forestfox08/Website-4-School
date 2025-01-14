@@ -1,0 +1,57 @@
+header{
+    font-family:MS Gothic;
+    padding:20px;
+    color: orange;
+}
+
+h1 {
+    font-family:MS Gothic;
+    font-size:100%;
+    color:orange;
+}
+
+content {
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-size: 100%;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    font-family:DSFONT, MS Gothic, Arial;
+    display: block;
+    color: orange;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family:dsfont;
+    src: url("fonts/Nintendo-DS-BIOS.ttf");
+
+}
+p {
+    font-family:dsfont;
+    font-size:200%;
+}

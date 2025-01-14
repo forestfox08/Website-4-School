@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/style.css">
+    <title>J.J. - AboutMe</title>
+    <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <p id="version">Version 1.2</p>
+        <img 
+        src="../common/images/madeby2.png" 
+        alt="thizisjj"
+        id="headerimg"
+        >
+    </header>
+    <nav>
+        <a href="../">Home</a>
+        <a href="../about/">About Me</a>
+        <a href="./">Contact</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./">About Me</a>
+        <a href="./andere_droom/">Andere Droom</a>
+        <a href="./mijn_droombaan/">Mijn Droombaan</a>
+        <a href="./na_het_ma/">Na het MA</a>
+        <a href="./tech_skills/">Tech Skills</a>
+        <a href="./soft_skills/">Soft Skills</a>
+        <a href="./wat_wil_ik/">Goals</a>
+      </div>
+
+      <button id="sidenavbutton"><span onclick="openNav()">Open Sidenav</span></button>
+
+    <main id="aboutme_article">
+        <h1>About</h1>
+        <br>
+        <img src="../common/images/picofme.png" alt="me" id="me">
+        <br>
+        <br>
+        <h2>about me!</h2>
+        <br>
+        <p>
+            Mijn naam is J.J., Ik ben 16 jaar en ik ben opgegroeid in Amsterdam.
+            <br>
+            <br>
+            Mijn hobbies zijn fotografie, skaten, baken en gamen.
+            Ik studeer op dit moment in Amsterdam.
+           
+        </p>
+        <br>
+        <br>
+        <h2>Favorieten Eten</h2>
+        <br>
+        <p>
+            Mijn favoriete gerechten zijn pinoy spaghetti, francesinha, sweet potato loaded fries en sushi.
+            Maar ik hou van heel veel gerechten, zo lang er geen noten in zitten. (Ik ben allergisch voor alle soorten noten.)
+        </p>
+        <br>
+        <br>
+        <h2>Skaten</h2>
+        <br>
+        <p>
+        Ik ben slecht in skaten maar ik ben het nog aan het leren, ik begon laastste zomer.
+        </p>
+    </main>
+    <footer>
+        Made by J.J. Romeira De Bastos
+    </footer>
+</body>
+</html>

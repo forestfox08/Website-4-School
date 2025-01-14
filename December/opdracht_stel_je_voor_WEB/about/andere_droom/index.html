@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../common/style.css">
+    <title>J.J. - Andere Droom</title>
+</head>
+<body>
+    <header>
+        <p id="version">Version 1.2</p>
+        <img 
+        src="../../common/images/madeby2.png"
+        alt=""
+        id="headerimg">
+    </header>
+    <nav>
+        <a href="/../../">Home</a>
+        <a href="../">About Me</a>
+        <a href="/../../">Contact</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" 
+        class="closebtn" onclick="closeNav()">&times;
+        </a>
+        <a href="../">About Me</a>
+        <a href="../andere_droom/">Andere Droom</a>
+        <a href="../mijn_droombaan/">Mijn Droombaan</a>
+        <a href="../na_het_ma/">Na het MA</a>
+        <a href="../tech_skills/">Tech Skills</a>
+        <a href="../soft_skills/">Soft Skills</a>
+        <a href="../wat_wil_ik/">Goals</a>
+      </div>
+
+      <button id="sidenavbutton"><span onclick="openNav()">Open Sidenav</span></button>
+
+        <main id="aboutme_article">
+        <h1>Andere Droom - fotografie</h1>
+
+        <br>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+        <img id="slideshowimage" src="../../common/images/placeasia.png" 
+        alt="myphoto">
+        <div class="text">Filipijnen, 2024</div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img id="slideshowimage" src="../../common/images/sky.png" 
+        alt="myphoto">
+        <div class="text">De Lucht, 2024</div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img id="slideshowimage" src="../../common/images/yuh.png" 
+        alt="myphoto">
+        <div class="text">Thuis, 2024</div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img id="slideshowimage" src="../../common/images/DSC03220.JPG" 
+        alt="myphoto">
+        <div class="text">Filipijnen, 2024</div>
+    </div>
+       
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+        <br>
+        <br>
+        <h2>fotografie</h2>
+        <br>
+        <p>
+            Fotografie is altijd een hele grote hobby van mij geweest.
+            <br>
+            <br>
+            Ik maak graag fotos waar ik naartoe ga, op vakantie, uitjes, bij iemand langs gaan, het maakt mij niet veel uit.
+            Voor mij is het gewoon leuk om fotos te maken vooral als ik iets leuks zie of iets wat ik mooi vind.
+            <br>
+            <br>
+            In de slideshow boven deze tekst zie je een paar fotos die ik heb gemaakt.
+        </p>
+    </main>
+    <footer>
+        Made by J.J. Romeira De Bastos
+    </footer>
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+    
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+        showSlides(slideIndex += n)
+        }
+    
+        function currentSlide(n) {
+        showSlides(slideIndex = n)
+        }
+    
+      function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+        </script>
+</body>
+</html>

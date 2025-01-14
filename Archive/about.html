@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon2.ico">
+    <title>This is J.J.</title>
+    <script>
+        function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+    </script>
+    <style>
+
+    @font-face {
+    font-family:dsfont;
+    src: url("./fonts/Nintendo-DS-BIOS.ttf");
+
+    }
+
+    p, h1, ol{
+        font-family:dsfont;
+        font-size:200%;
+        color:rgb(0, 0, 0);
+    }
+
+        .fotovanmij{
+           border-radius: 50%;
+           width: 100%;
+           height: 100%;
+    }
+        .hoofddorp{
+          width: 200px;
+          height: 200px;
+    }
+        body {
+        background-image:url("./images/yeah.gif");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        }
+
+        table{
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgb(39,112,184);
+        background: linear-gradient(346deg, rgba(39,112,184,1) 0%, rgba(132,176,169,1) 100%);
+        padding: 40px;
+        }
+
+        .topnav{
+    background-color: rgb(39,112,184);
+    overflow: hidden;
+    font-family:dsfont;
+    }
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.Home {
+  background-color: rgba(132,176,169,1);
+  color: white;
+}
+
+.topnav button{
+    background-image:url("./images/yeah.gif");
+}
+
+.dark-mode {
+    background-image:url("./images/darkmode.gif");
+}
+
+.dark-mode p,h1 {
+    color: rgb(21, 44, 94);
+}
+  </style>
+</head>
+<body>
+    <div class="topnav">
+            <a class="Home" href="index.html">Home</a> 
+            <a href="about.html">About me</a> 
+            <a href="blog1.html">Blog Opdracht 1</a> 
+            <a href="blog2.html">Blog Opdracht 2</a> 
+            <button onclick="myFunction()">Toggle dark mode</button>
+    </div>
+        <table>
+        <div id="content">
+        <tr>
+        <th>
+            <p><img src="./images/me.jpg" class="fotovanmij"></p>
+                </th>
+                </tr>
+        <tr> 
+        <th>
+        <h1>Wie ben ik?</h1>
+        <p>
+            Mijn naam is Joaquim Jose Romeira De Bastos, maar mensen noemen mij J.J.
+        <br>
+        <br>
+            Ik ben 16 jaar oud.
+        </p>
+                </th>
+                </tr>
+            <tr> 
+            <th>
+            <h1>Woonplaats</h1>
+            <p>
+                Ik woon in Hoofddorp, er is niet veel te vertellen over de plek waar ik woon.
+                <br>
+                Hoofddorp is een rustig dorpje met een winkelcentrum.
+            </p>
+            <p><img src="./images/Hoofddorp.jpg" class="hoofddorp"></p>
+        </tr>
+        </th>
+        <tr>
+        <th>
+            <h1>In mijn vrije tijd</h1>
+            <p>
+                Mijn hobbies zijn met hardware werken, programeren, bakken en ook skaten.
+                <br>
+                <br>
+                ik doe ook fotografie en ik heb 6 jaar aan experience.
+            </p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+            <h1>Wat kan ik al?</h1>
+            <p>
+                Ik kan HTML en CSS, en ik heb 6 jaar in Fotografie. 
+                <br>
+                <br>
+                Ik kan ook rollerskaten en ik ben op dit moment aan het leren hoe ik moet skateboarden.
+            </p>
+        </tr>
+        </th>
+        <tr>
+        <th>  
+        <h1>Mijn top 10 songs</h1>
+        <!--Music List-->
+            <ol class="musiclist">
+                <li>boa - duvet</li>
+                <br>
+                <br>
+                <li>Nujabes - luv (sic)</li>
+                <br>
+                <br>
+                <li>Ennio Morricone - Intervallo I</li>
+                <br>
+                <br>
+                <li>SOUL SCREAM - Comatus</li>
+                <br>
+                <br>
+                <li>The Beach Boys - Deirdre</li>
+                <br>
+                <br>
+                <li>Golemn - Untouchable</li>
+                <br>
+                <br>
+                <li>Gang Starr - What I'm here 4</li>
+                <br>
+                <br>
+                <li>Lyric Piece book 1, op. 12 - Edvard Grieg</li>
+                <br>
+                <br>
+                <li>Soundgarden - Black Hole Sun</li>
+                <br>
+                <br>
+                <li>Nujabes - Letter from Yokosuka</li>
+            </ol>
+        </p>
+</table>
+</div>
+</body>
+</html>

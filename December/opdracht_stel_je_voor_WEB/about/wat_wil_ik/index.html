@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/common/style.css">
+    <title>J.J. - Andere Droom</title>
+</head>
+<body>
+    <header>
+        <p id="version">Version 1.2</p>
+        <img 
+        src="../../common/images/madeby2.png"
+        alt=""
+        id="headerimg">
+    </header>
+    <nav>
+        <a href="/../../">Home</a>
+        <a href="../">About Me</a>
+        <a href="/../../">Contact</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" 
+        class="closebtn" onclick="closeNav()">&times;
+        </a>
+        <a href="../">About Me</a>
+        <a href="../andere_droom/">Andere Droom</a>
+        <a href="../mijn_droombaan/">Mijn Droombaan</a>
+        <a href="../na_het_ma/">Na het MA</a>
+        <a href="../tech_skills/">Tech Skills</a>
+        <a href="../soft_skills/">Soft Skills</a>
+        <a href="../wat_wil_ik/">Goals</a>
+      </div>
+
+      <button id="sidenavbutton"><span onclick="openNav()">Open Sidenav</span></button>
+
+        <main id="aboutme_article">
+        <h1>Goals/Wat wil ik bereiken</h1>
+        <br>
+        <br>
+        <h2>Wat wil ik?</h2>
+        <br>
+        <p>
+        Dit zijn dingen die ik wil bereiken aan het einde van mijn opleiding:
+        <br>
+        <br>
+        <ul>
+        <li>Ik wil een game maken</li>
+        <br>
+        <li>Ik wil ten minste C#, een beetje C++ en Javascript hebben geleerd.</li>
+        <br>
+        <li>Ik wil mn eigen website hebben gemaakt (ben ik al mee bezig)</li>
+        <br>
+        </li>
+        </p>
+    </main>
+    <footer>
+        Made by J.J. Romeira De Bastos
+    </footer>
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+    
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+</body>
+</html>
